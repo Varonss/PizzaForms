@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PizzaFlavor</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/main.css">
+  </head>
+  <body>
+	<div class="non-fixed-layout">
+		<h1 class="header-title">Pizza Order Form ツ</h1>
+		<div class="fixed-layout">
+			<div class="form-cont">
+				<form id="main_form" href="" class="form">
+
+					<div class="form-item option-1">
+						<label form="pizzaSize" class="form-label">Choose a pizza size!!!</label>
+						<select type="select" name="pizzaSize" id="pizzaSize" class="form-input">
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+							<option value="x-large">X-Large</option>
+							<option value="party">Party</option>
+						</select>
+						<button class="next-item-button">Next</button>
+					</div>
+
+					<div class="form-item option-2">
+						<label for="doughType" class="form-label">What dough do you want?</label>
+						<select type="number" name="doughType" id="doughType" class="form-input" required>
+							<option value="regular dough">Regular </option>
+							<option value="whole wheat dough">Whole Wheat</option>
+							<option value="gluten free dough">Gluten Free</option>
+						</select>
+
+						<button class="next-item-button">Next</button>
+					</div>
+
+					<div class="form-item option-3">
+						<label for="sauceType" class="form-label">What sauce do you want?</label>
+						<select type="number" name="sauceType" id="sauceType" class="form-input" required>
+							<option value="Marianara Sauce">Marianara</option>
+							<option value="White sauce">White Sauce</option>
+							<option value="No sauce">No Sauce</option>
+						</select>
+
+						<button class="next-item-button">Next</button>
+					</div>
+
+					<div class="form-item option-4">
+						<div class="topping-items">
+							<label for="pepperoni">Pepperoni</label>
+							<input type="checkbox" id="pepperoni" name="topping" value="Pepperoni">
+						</div>
+						<div class="topping-items">
+							<label for="olives">Olives</label>
+							<input type="checkbox" id="olives" name="topping" value="Olives">
+						</div>
+
+						<div class="topping-items">
+							<label for="hotsauce">Hotsauce</label>
+							<input type="checkbox" id="hotsauce" name="topping" value="Hotsauce">
+						</div>
+
+						<div class="topping-items">
+							<label for="mushroom">Mushroom</label>
+							<input type="checkbox" id="mushroom" name="topping" value="Mushrooms">
+						</div>
+
+						<div class="topping-items">
+							<label for="bacon">Bacon</label>
+							<input type="checkbox" id="bacon" name="topping" value="Bacon">
+						</div>
+
+						<div class="topping-items">
+							<label for="sunDriedTomatoes">Sun Dried Tomatoes</label>
+							<input type="checkbox" id="sunDriedTomatoes" name="topping" value="Sun dried tomatoes">
+						</div>
+
+						<div class="topping-items">
+							<label for="pineapple">Pineapple</label>
+							<input type="checkbox" id="pineapple" name="topping" value="Pineapple">
+						</div>
+						<button class="next-item-button">Next</button>
+					</div>
+
+					<div class="form-item option-5">
+						<label for="cheeseType" class="form-label">What sauce do you want?</label>
+						<select type="number" name="cheeseType" id="cheeseType" class="form-input" required>
+							<option value="Cheddar cheese">Cheddar</option>
+							<option value="Mozarella cheese">Mozarella</option>
+							<option value="Old cheese">Old Cheese</option>
+							<option value="New cheese">New Cheese</option>
+						</select>
+						<button class="next-item-button">Next</button>
+					</div>
+
+					<div class="form-item option-6">
+						<label for="storeType" class="form-label">Choose a store location</label>
+						<select type="number" name="storeType" id="storeType" class="form-input" required>
+							<option value="Annex store">Annex</option>
+							<option value="Liberty store">Liberty Village</option>
+							<option value="Queen store">Queen West</option>
+							<option value="Danforth store">The Danforth</option>
+							<option value="Dufferin store">Duffern Mall</option>
+						</select>
+						<button class="next-item-button">Next</button>
+					</div>
+
+					<div class="timer-cont">
+						<h2 class="display-time-remaining"></h2>
+					</div>
+
+					<div class="form-item option-7">
+						<input type="submit" name="submit" id="submit" class="form-input" value="Order my pizza, yo" required>
+					</div>
+
+
+				</form>
+			</div>
+
+
+			<!-- dynamically generated -->
+			<div class="order-summary"></div>
+			<div class="countdown">
+				<div class="timer">
+						<span id="minutes"></span> Minute(s)
+						<span id="seconds"></span> Second(s)
+				</div>
+		</div>
+		<div class="resetBtn">
+			<input type="reset" value="New order" class="reset">
+		</div>
+			<!-- /fixed layout -->
+		</div>
+	</div>
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+    <script src="PizzaForms/Assets/scripts.js"></script>
+  </body>
+  <footer>
+      <div class="contact-details">
+        <h3>Contact details</h3>
+        <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> +52 1 55 4107 0000</p>
+        <p><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact us</a></p>
+      </div>
+    </footer>
+</html>
